@@ -52,5 +52,5 @@ public class ReportView {
     /**
      * 更新日時
      */
-    private LocalDateTime updateAt;
+    private LocalDateTime updatedAt;
 }

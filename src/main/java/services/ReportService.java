@@ -92,7 +92,7 @@ public class ReportService extends ServiceBase {
         if (errors.size() == 0) {
             LocalDateTime ldt = LocalDateTime.now();
             rv.setCreatedAt(ldt);
-            rv.setUpdateAt(ldt);
+            rv.setUpdatedAt(ldt);
             createInternal(rv);
         }
 
@@ -114,7 +114,7 @@ public class ReportService extends ServiceBase {
 
             //更新日時を現在時刻に設定
             LocalDateTime ldt = LocalDateTime.now();
-            rv.setUpdateAt(ldt);
+            rv.setUpdatedAt(ldt);
 
             updateInternal(rv);
         }

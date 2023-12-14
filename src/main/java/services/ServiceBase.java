@@ -6,13 +6,10 @@ import utils.DBUtil;
 
 /**
  * DB接続に関わる共通処理を行うクラス
- * @author jo-nishibayashi
- *
  */
-
 public class ServiceBase {
 
-    /*
+    /**
      * EntityManagerインスタンス
      */
     protected EntityManager em = DBUtil.createEntityManager();
@@ -25,5 +22,4 @@ public class ServiceBase {
             em.close();
         }
     }
-
 }
